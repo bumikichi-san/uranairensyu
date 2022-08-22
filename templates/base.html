@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+    <title>AIで占い</title>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light p-3">
+        <a class="navbar-brand pl-3" href="/" style="font-size:2rem">AI占いアプリ</a>
+    </nav>
+        <div class="row">
+            {% block body %}{% endblock %}
+        </div>
+</body>
+</html>

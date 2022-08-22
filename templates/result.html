@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<div class="col-md-2 col-sm-2"></div>
+<div class="col-md-8 col-md-offset-2 col-sm-8">
+
+
+</div>
+
+<div class="col-md-2 col-sm-2"></div><h2>結果が出ました</h2>
+    <h1>あなたは{{ yourType }}タイプです。</h1>
+    <p><img src="{{ picture }}" alt="" class="img-fluid"></p>
+    <h2>【2022年あなたの運勢は？】</h2>
+    <p>{{ unsei2022 }}</p>
+    <h3>--- 【2022年運勢ランキング】---</h3>
+    <ul>
+        <li>第１位　　「銀の時計座」　開運の年</li>
+        <li>第２位　　「金の鳳凰座」　幸運の年</li>
+        <li>第３位　　「金のインディアン座」　解放の年</li>
+        <li>第４位　　「金の時計座」　ブレーキの年</li>
+        <li>第５位　　「銀の鳳凰座」　準備の年</li>
+        <li>第６位　　「金の羅針盤座」　健康管理の年</li>
+        <li>第７位　　「銀の羅針盤座」　チャレンジの年</li>
+        <li>第８位　　「銀のインディアン座」　リフレッシュの年</li>
+        <li>第９位　　「金のイルカ座」　チャレンジの年</li>
+        <li>第１０位　「銀のイルカ座」　整理の年</li>
+        <li>第１１位　「金のカメレオン座」　裏運気の年</li>
+        <li>第１２位　「銀のカメレオン座」　乱気の年</li>
+    </ul>
+    <button class="btn btn-primary btn-lg" style="width:30%">
+        <a href="/" style="color:#fff;text-decoration:none">戻る</a>
+    </button>
+
+{% endblock %}
